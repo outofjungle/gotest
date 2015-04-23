@@ -31,7 +31,7 @@ var _ = Describe("Vector", func() {
 		})
 
 		Context("When 1 unit vector is in Q1 and 1 in Q2", func() {
-			It("returns positive value", func() {
+			It("returns 0", func() {
 				p1 = Point{X: val, Y: val}
 				p2 = Point{X: -val, Y: val}
 				scalar := p1.Dot(p2)
@@ -53,7 +53,7 @@ var _ = Describe("Vector", func() {
 		})
 
 		Context("When 1 unit vector is in Q1 and 1 in Q2", func() {
-			It("returns positive value", func() {
+			It("returns 0", func() {
 				p1 = Point{X: val, Y: val}
 				p2 = Point{X: val, Y: -val}
 				scalar := p1.Dot(p2)
